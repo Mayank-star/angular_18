@@ -18,12 +18,16 @@ export class DataBindingComponent {
   isIndian:boolean = true;
   currentDate:Date =  new Date();
   primaryColor = 'bg-danger'
+  
+
 
   firstName =  signal('Chetan singh')
 
   constructor(){
 
   }
+
+
 
   changeCourse(){
     this.courseName ='Reactjs';
@@ -34,6 +38,6 @@ export class DataBindingComponent {
      alert(message)
   }
   
-  
+
   
 }
