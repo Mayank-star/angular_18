@@ -5,6 +5,7 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { StructuralDirectiveComponent } from './components/structural-directive/structural-directive.component';
 import { AttributeDirectiveComponent } from './components/attribute-directive/attribute-directive.component';
 import { IfComponent } from './components/control/if/if.component';
+import { PipeComponent } from './components/pipe/pipe.component';
 
 export const routes: Routes = [
 
@@ -31,6 +32,11 @@ export const routes: Routes = [
     {
         path:'if-statement',
         component:IfComponent
+    },
+    {
+        path:'pipe',
+        component: PipeComponent
     }
+
 
 ];
