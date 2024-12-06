@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-structural-directive',
@@ -14,6 +15,10 @@ export class StructuralDirectiveComponent {
   isDiv2Visible:boolean=true;
   cityArray :string [] = ['delhi','singapore','mumbai']
 
+  constructor(private router:Router){
+
+  }
+
   showDiv1(){
     this.isDiv1Visible=true;
   }
@@ -24,6 +29,10 @@ export class StructuralDirectiveComponent {
 
   div2toggle(){
     this.isDiv2Visible=!this.isDiv2Visible
+  }
+
+  navigateToAdd(){
+      this.router.navigateByUrl('/attribute-directive')
   }
 
     
