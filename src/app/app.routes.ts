@@ -4,6 +4,7 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { StructuralDirectiveComponent } from './components/structural-directive/structural-directive.component';
 import { AttributeDirectiveComponent } from './components/attribute-directive/attribute-directive.component';
+import { IfComponent } from './components/control/if/if.component';
 
 export const routes: Routes = [
 
@@ -26,5 +27,10 @@ export const routes: Routes = [
     {
         path:'attribute-directive',
         component:AttributeDirectiveComponent
+    },
+    {
+        path:'if-statement',
+        component:IfComponent
     }
+
 ];

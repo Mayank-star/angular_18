@@ -1,0 +1,10 @@
+<p>if works!</p>
+
+@if (isIfBlockVisible) {
+    <div [ngStyle]="ifStyles">
+          If block will hide and show on button click.
+    </div>   
+}
+
+<button class="btn btn-primary" (click)="show()" >show </button>
+<button class="btn btn-info"  (click)="hide()" >Hide</button>
