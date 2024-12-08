@@ -1,0 +1,14 @@
+<p>get-api works!</p>
+
+<button class="btn btn-secondary" (click)="getAllUsers()"> Get Users</button>
+
+<div>
+    <select>
+        @for (item of userList; track $index) {
+          <option>{{item.name}}</option>
+        }
+ </select>
+</div>
+
+<app-my-button  [btnClass]="'btn btn-secondary'" (onBtnClick)="onHit($event)"  [btnText]="'Hit me !'"></app-my-button>
+
